@@ -1,9 +1,9 @@
 .metadata
 */bin/
 */target/
-*/.classpath
-*/.project
-*/.settings/
+pro*/.classpath
+pro*/.project
+pro*/.settings/
 */.cache-main
 */.cache-tests
 */.worksheet
