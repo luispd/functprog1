@@ -1,4 +1,4 @@
-# progfun1-objsets
+# functprog1
 git clone https://github.com/luispd/functprog1
 
 luis@pcluis:~/workspace$ cd progfun1-objsets/
