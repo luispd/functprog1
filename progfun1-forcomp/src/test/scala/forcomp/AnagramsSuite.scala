@@ -37,6 +37,12 @@ class AnagramsSuite extends FunSuite  {
     assert(wordAnagrams("player").toSet === Set("parley", "pearly", "player", "replay"))
   }
 
+  test("descomponer") {
+    assert(descomponer(('f',4)) === List(('f',1),('f',2),('f',3),('f',4)) )
+  }
+  test("descomponer uno") {
+    assert(descomponer(('a',1)) === List(('a',1)) )
+  }
 
 
   test("subtract: lard - r") {
@@ -46,6 +52,13 @@ class AnagramsSuite extends FunSuite  {
     assert(subtract(lard, r) === lad)
   }
 
+  test("subtract: assessment - assess") {
+    val assessment = wordOccurrences("assessment")
+    val assess = wordOccurrences("assess")
+    val res = List(('e',1), ('m',1), ('n',1), ('t',1))
+    assert(subtract(assessment,assess) === res)
+    
+  }
 
   test("combinations: []") {
     assert(combinations(Nil) === List(Nil))
